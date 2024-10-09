@@ -1,14 +1,11 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Headers from "./Components/Headers";
-import Sidebar from "./Components/Sidebar";
-import Intensity from "./AdminComponents/Intensity";
-import Year from "./AdminComponents/Year";
-import Region from "./AdminComponents/Region";
-import City from "./AdminComponents/City";
-import { Likelihood } from "./AdminComponents/Likelihood";
-import Topics from "./AdminComponents/Topics";
-import Relevance from "./AdminComponents/Relevance";
+// import Sidebar from "./Components/Sidebar";
+// import HeroSection from "./Components/HeroSection";
+import HeroSide from "./Components/HeroSide";
+import HeroMaster from "./Components/HeroMaster";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,15 +30,12 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Headers/>
-        <Sidebar/>
+        {/* <Sidebar/> */}
+        {/* <HeroSection /> */}
+        {/* <HeroSide/> */}
+        <HeroMaster/>
         
-        <Intensity/>
-        <Relevance/>
-        <City/>
-        <Topics/>
-        <Region/>
-        <Likelihood/>
-        <Year/>
+        
 
 
         {children}
