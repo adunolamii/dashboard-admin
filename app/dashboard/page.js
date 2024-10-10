@@ -2,7 +2,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div>ddasspage</div>
+    <div>dashpage</div>
   )
 }
 

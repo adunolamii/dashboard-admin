@@ -1,10 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Headers from "./Components/Headers";
-// import Sidebar from "./Components/Sidebar";
-// import HeroSection from "./Components/HeroSection";
-import HeroSide from "./Components/HeroSide";
-import HeroMaster from "./Components/HeroMaster";
+
 
 
 const geistSans = localFont({
@@ -29,15 +25,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Headers/>
-        {/* <Sidebar/> */}
-        {/* <HeroSection /> */}
-        {/* <HeroSide/> */}
-        <HeroMaster/>
-        
-        
-
-
+      
         {children}
       </body>
     </html>
