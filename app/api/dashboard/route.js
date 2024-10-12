@@ -15,9 +15,15 @@ const loadDB = async()=>{
 }
 loadDB()
 
-// POST REQ
 
-const dashboardData = {
+ 
+
+
+// POST REQ
+export async function POST(request){
+  const formData = await request.formData();
+
+  const dashboardData = {
   end_year: `${formData.get('end_year')}`,
   intensity:`${formData.get('intensity')}`,
   sector: `${formData.get('sector')}`,
@@ -39,6 +45,8 @@ const dashboardData = {
 await DataModel.create(dashboardData);
 console.log("datas saved");
 return NextResponse.json({success:true, msg:"datas added"})
+}
+
 
 // APIS ENDPOINT TO GET ALL REQUEST
 export async function GET (request){
