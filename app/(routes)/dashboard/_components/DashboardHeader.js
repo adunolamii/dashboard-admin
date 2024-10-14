@@ -1,4 +1,4 @@
-import { UserButton } from '@clerk/nextjs'
+// import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const DashboardHeader = () => {
@@ -7,7 +7,7 @@ const DashboardHeader = () => {
 
     {/* <div>Search</div> */}
     <div>
-        <UserButton/>
+        {/* <UserButton/> */}
     </div>
     </div>
   )

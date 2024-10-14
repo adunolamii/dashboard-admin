@@ -1,15 +1,20 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
+    "/(auth)/sign-in/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/(auth)/sign-in/page.js"
     ],
     "/(routes)/dashboard/page": [
       "static/chunks/webpack.js",
@@ -24,12 +29,44 @@
     "/(routes)/dashboard/topics/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/topics/page.css",
       "static/chunks/app/(routes)/dashboard/topics/page.js"
     ],
-    "/(routes)/dashboard/add/page": [
+    "/(routes)/dashboard/likelihood/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/(routes)/dashboard/add/page.js"
+      "static/css/app/(routes)/dashboard/likelihood/page.css",
+      "static/chunks/app/(routes)/dashboard/likelihood/page.js"
+    ],
+    "/(routes)/dashboard/relevance/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/relevance/page.css",
+      "static/chunks/app/(routes)/dashboard/relevance/page.js"
+    ],
+    "/(routes)/dashboard/year/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/year/page.css",
+      "static/chunks/app/(routes)/dashboard/year/page.js"
+    ],
+    "/(routes)/dashboard/country/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/country/page.css",
+      "static/chunks/app/(routes)/dashboard/country/page.js"
+    ],
+    "/(routes)/dashboard/intensity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/intensity/page.css",
+      "static/chunks/app/(routes)/dashboard/intensity/page.js"
+    ],
+    "/(routes)/dashboard/city/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/city/page.css",
+      "static/chunks/app/(routes)/dashboard/city/page.js"
     ]
   }
 }

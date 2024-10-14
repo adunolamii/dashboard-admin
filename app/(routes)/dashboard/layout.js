@@ -5,11 +5,11 @@ import DashboardHeader from './_components/DashboardHeader'
 const DashboardLayout = ({children}) => {
   return (
     <div>
-        <div className='fixed md:w-64 hidden bg-red-700 md:block'>
+        <div className='fixed md:w-64 hidden bg-gray-700 md:block'>
         <SideNav/>
            
         </div >
-        <div className='md:ml-64 bg-green-600'>
+        <div className='md:ml-64'>
             <DashboardHeader/>
             {children}</div>
         

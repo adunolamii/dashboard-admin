@@ -1,6 +1,6 @@
  "use client"
 
-import { UserButton } from '@clerk/nextjs'
+// import { UserButton } from '@clerk/nextjs'
 import { icons, Dice5, LayoutDashboard, CircleGauge, Rocket, CalendarDays, PlaneTakeoff,  Radar, MapPinned   } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -88,7 +88,7 @@ const SideNav = () => {
         {
             menuList.map((menu, index)=>(
                 <Link href={menu}>
-                <h2 className={` hover:text-green-700 hover:bg-black flex gap-2 text-gray-200 font-medium p-5 cursor-pointer rounded-md ${path==menu.path&& 'text-blue-600'}`}>
+                <h2 className={` hover:text-purple-700 hover:bg-black flex gap-2 text-gray-200 font-medium p-5 cursor-pointer rounded-md ${path==menu.path&& 'text-blue-600'}`}>
                 
                     {menu.icon}
                     {menu.name}
@@ -98,7 +98,7 @@ const SideNav = () => {
         }
     </div>
 <div className='fixex bottom-10 p-5 flex gap-2 items-center'>
-    <UserButton/>
+    {/* <UserButton/> */}
     Profile
 </div>
 
