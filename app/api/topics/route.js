@@ -26,19 +26,7 @@ const loadDB = async()=>{
 //         return NextResponse.json({msg:"Topic created"})
 //     }
 
-export async function POST(request) {
-    try {
-      // Parse the incoming request body
-      const { name, topic } = await request.json();
-  
-      // Create a new topic in the database
-      await TopicModel.create({ name, topic });
-  
-      // Return success response
-      return NextResponse.json({ msg: "Topic created" });
-    } catch (error) {
-      console.error('Error creating topic:', error);
-    }}
+
 
 // export async function POST(request){
 //     const formData = await request.formData();

@@ -13,63 +13,58 @@ const SideNav = () => {
             {
                 id: 1,
                 name: 'Dashboard',
-                icons:"LayoutDashboard",
+                icon:"LayoutDashboard",
                 path:"/dashboard"
             },
             {
                 id: 2,
                 name: 'Topics',
-                icons:" CircleGauge",
+                icon:" CircleGauge",
                 path:"/dashboard/topics"
             },
 
             {
                 id: 3,
                 name: 'Likelihood',
-                icons:" MapPinned"
+                icon:" MapPinned",
+                path:"/dashboard/likelihood"
             },
             {
                 id: 4,
                 name: 'Relevance',
-                icons:" Rocket"
+                icon:" Rocket",
+                path:"/dashboard/relevance"
             },
             {
                 id: 5,
                 name: 'Year',
-                icons:" CalendarDays",
+                icon:" CalendarDays",
                 path:"/dashboard/year"
             },
             {
                 id: 6,
                 name: 'Country',
-                icons:" PlaneTakeoff ",
+                icon:" PlaneTakeoff ",
                 path:"/dashboard/country"
             },
             {
                 id: 7,
                 name: 'Intensity',
-                icons:" Dice5",
+                icon:" Dice5",
                 path:"/dashboard/intensity",
             },
             {
                 id: 8,
                 name: 'Region',
-                icons:" MapPinCheckInside",
+                icon:" MapPinCheckInside",
                 path:"/dashboard/region",
             },
             {
                 id: 9,
                 name: 'City',
-                icons:"  Radar",
+                icon:"  Radar",
                 path:"/dashboard/city"
             },
-            {
-                id: 10,
-                name: 'ADD',
-                icons:"  Radar",
-                path:"/dashboard/city"
-            },
-            
         ]
 
         const path = usePathname();
@@ -90,7 +85,7 @@ const SideNav = () => {
                 <Link href={menu}>
                 <h2 className={` hover:text-purple-700 hover:bg-black flex gap-2 text-gray-200 font-medium p-5 cursor-pointer rounded-md ${path==menu.path&& 'text-blue-600'}`}>
                 
-                    {menu.icon}
+                    {/* {menu.icon} */}
                     {menu.name}
                 </h2>
                 </Link>
@@ -99,7 +94,7 @@ const SideNav = () => {
     </div>
 <div className='fixex bottom-10 p-5 flex gap-2 items-center'>
     {/* <UserButton/> */}
-    Profile
+  
 </div>
 
 

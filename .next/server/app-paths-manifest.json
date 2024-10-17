@@ -1,8 +1,5 @@
 {
-  "/(routes)/dashboard/likelihood/page": "app/(routes)/dashboard/likelihood/page.js",
-  "/(routes)/dashboard/relevance/page": "app/(routes)/dashboard/relevance/page.js",
-  "/(routes)/dashboard/year/page": "app/(routes)/dashboard/year/page.js",
-  "/(routes)/dashboard/country/page": "app/(routes)/dashboard/country/page.js",
-  "/(routes)/dashboard/intensity/page": "app/(routes)/dashboard/intensity/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/city/route": "app/api/city/route.js",
   "/(routes)/dashboard/city/page": "app/(routes)/dashboard/city/page.js"
 }
