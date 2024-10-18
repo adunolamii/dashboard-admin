@@ -22,10 +22,41 @@
       "static/chunks/main-app.js",
       "static/chunks/app/(routes)/dashboard/layout.js"
     ],
-    "/_not-found/page": [
+    "/(routes)/dashboard/country/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/_not-found/page.js"
+      "static/css/app/(routes)/dashboard/country/page.css",
+      "static/chunks/app/(routes)/dashboard/country/page.js"
+    ],
+    "/(routes)/dashboard/relevance/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/relevance/page.css",
+      "static/chunks/app/(routes)/dashboard/relevance/page.js"
+    ],
+    "/(routes)/dashboard/year/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/year/page.css",
+      "static/chunks/app/(routes)/dashboard/year/page.js"
+    ],
+    "/(routes)/dashboard/intensity/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/intensity/page.css",
+      "static/chunks/app/(routes)/dashboard/intensity/page.js"
+    ],
+    "/(routes)/dashboard/topics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/topics/page.css",
+      "static/chunks/app/(routes)/dashboard/topics/page.js"
+    ],
+    "/(routes)/dashboard/likelihood/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(routes)/dashboard/likelihood/page.css",
+      "static/chunks/app/(routes)/dashboard/likelihood/page.js"
     ]
   }
 }

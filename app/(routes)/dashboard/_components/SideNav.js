@@ -1,7 +1,7 @@
  "use client"
 
 // import { UserButton } from '@clerk/nextjs'
-import { icons, Dice5, LayoutDashboard, CircleGauge, Rocket, CalendarDays, PlaneTakeoff,  Radar, MapPinned   } from 'lucide-react'
+import { LayoutDashboard, icons, Dice5, CircleGauge, Rocket, CalendarDays, PlaneTakeoff,  Radar, MapPinned   } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -78,21 +78,21 @@ const SideNav = () => {
   return (
     <div className='h-screen p-5 border shadow-sm'>
     <Image src={"/logo.svg"} alt='logo' width={50} height={30}/>
-    
+
     <div className=' mt-5'>
         {
             menuList.map((menu, index)=>(
-                <Link href={menu}>
-                <h2 className={` hover:text-purple-700 hover:bg-black flex gap-2 text-gray-200 font-medium p-5 cursor-pointer rounded-md ${path==menu.path&& 'text-blue-600'}`}>
+                <Link href={menu.path}>
+                <h2 className={` hover:text-purple-600 hover:bg-black flex gap-2 text-gray-200 font-medium p-5 cursor-pointer rounded-lg ${path==menu.path&& 'text-blue-600'}`}>
                 
-                    {/* {menu.icon} */}
+                    {/* <menu.icon/> */}
                     {menu.name}
                 </h2>
                 </Link>
             ))
         }
     </div>
-<div className='fixex bottom-10 p-5 flex gap-2 items-center'>
+<div className='fix bottom-10 p-5 flex gap-2 items-center'>
     {/* <UserButton/> */}
   
 </div>

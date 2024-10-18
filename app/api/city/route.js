@@ -19,6 +19,6 @@ export async function POST(request){
 
     // GET REQ
     export async function GET(request){
-        const admintodos = await CityModel.find({});
+        const CityModel = await CityModel.find({});
         return NextResponse.json({CityModel:CityModel})
     }
